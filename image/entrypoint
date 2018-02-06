@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+tor &
+node /app/index.js &
+
+wait
+
