@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+if [ -z "$1" ]
+then
+    echo "Please, specify image's name"
+    exit 1
+fi
+
+docker run -itp 8080:8080 "$1"
+
